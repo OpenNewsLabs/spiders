@@ -1,0 +1,12 @@
+{
+  "author": "Cole Gillespie <mcg42387@gmail.com>",
+  "description": "collection of news spiders",
+  "dependencies" : {
+    "request" :  "2.2.x",
+    "cheerio" :  "0.12.x"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10"
+  }
+}
