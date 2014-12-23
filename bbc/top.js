@@ -8,7 +8,7 @@ function gotHTML(err, resp, html) {
   var parsedHTML = $.load(html),
     alreadyAdded;
 
-  parsedHTML('#promo2_carousel_items > dl > dt > a ').map(function(i, latest) {
+  parsedHTML('a.media_link').map(function(i, latest) {
 
     var href = $(latest).attr('href')
 
@@ -26,4 +26,4 @@ function gotHTML(err, resp, html) {
 
 } // end gotHTML()
 
-request("http://www.bbc.co.uk/", gotHTML)
+request("http://www.bbc.com/", gotHTML)
