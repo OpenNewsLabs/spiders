@@ -11,9 +11,16 @@ Local installation
 
 Current API
 --------
+After local installation is running all apis below can be viewed by appending to base path. example: "http://localhost:3000/cnn"
+
+Sites are scraped using css queries to grab proper anchor hrefs
+
 * /cnn
+    * .cnn_mtt1content > div > ul > li > a 
 * /fox
+    * .latest-news > ul > li > a
 * /bbc
+    * a.media_link
 
 Testing
 --------
