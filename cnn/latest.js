@@ -8,7 +8,7 @@ function gotHTML(err, resp, html) {
   var parsedHTML = $.load(html),
     alreadyAdded;
 
-  parsedHTML('.cnn_mtt1content > ul > li > a ').map(function(i, latest) {
+  parsedHTML('.cnn_mtt1content > div > ul > li > a ').map(function(i, latest) {
 
     var href = $(latest).attr('href')
 
