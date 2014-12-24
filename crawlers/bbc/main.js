@@ -12,6 +12,22 @@ exports.latest = function(req, res){
       alreadyAdded,
       output = [];
 
+    parsedHTML('.hero_image_link').map(function(i, latest) {
+
+      var href = $(latest).attr('href')
+
+      // do not show the links twice, cnn adds video imgs with the same
+      // href as the text beside it
+      if(alreadyAdded !== href) {
+
+        alreadyAdded = href
+        console.log(href)
+        output.push(href);
+
+      }
+
+    }) // end parsedHTML()
+
     parsedHTML('a.media_link').map(function(i, latest) {
 
       var href = $(latest).attr('href')
@@ -21,7 +37,7 @@ exports.latest = function(req, res){
       if(alreadyAdded !== href) {
 
         alreadyAdded = href
-
+        console.log(href)
         output.push(href);
 
       }
