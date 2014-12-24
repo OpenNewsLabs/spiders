@@ -17,6 +17,7 @@ Sites are scraped using css queries to grab proper anchor hrefs
 
 * /cnn
     * .cnn_mtt1content > div > ul > li > a 
+    ![current cnn query](https://raw.githubusercontent.com/OpenNewsLabs/spiders/master/crawlers/cnn/cnn.png)
 * /fox
     * .latest-news > ul > li > a
 * /bbc
