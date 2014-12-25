@@ -13,8 +13,8 @@ exports.latest = function(req, res){
       output = [];
 
     parsedHTML('.latest-news > ul > li > a ').map(function(i, latest) {
-
       var href = $(latest).attr('href')
+      var title = $(latest).text()
 
       // do not show the links twice, cnn adds video imgs with the same
       // href as the text beside it
@@ -22,7 +22,11 @@ exports.latest = function(req, res){
 
         alreadyAdded = href
 
-        output.push(href);
+        var story = {
+          href: href,
+          title: title
+        }
+        output.push(story);
 
       }
 

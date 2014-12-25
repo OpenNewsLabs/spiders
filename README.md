@@ -1,12 +1,13 @@
 News Spiders
 ==========
-A collection of crawlers for news web sites. This is used to grab links of the latest stories and provide them in a clean api. Most news orgs do not provide an api to get their latest stories. So I have created my own.
+A collection of crawlers for news web sites. API is used to grab links of the latest stories and provide them in a clean json format to be rendered however you need. Most news orgs do not provide an api to get their latest stories, so I have created my own.
 
 Local installation
 --------
+This api relies on node.js so make sure you have a revent version installed. 
 
-1. git clone
-2. npm install
+1. git clone https://github.com/OpenNewsLabs/spiders.git
+2. cd spiders && npm install
 3. node app
 
 Current API
@@ -15,13 +16,13 @@ After local installation is running all apis below can be viewed by appending to
 
 Sites are scraped using css queries to grab proper anchor hrefs
 
-* /cnn
+* GET /cnn
     * .cnn_mtt1content > div > ul > li > a 
     ![current cnn query](https://raw.githubusercontent.com/OpenNewsLabs/spiders/master/crawlers/cnn/cnn.png)
-* /fox
+* GET /fox
     * .latest-news > ul > li > a
     ![current fox query](https://raw.githubusercontent.com/OpenNewsLabs/spiders/master/crawlers/fox/fox-latest.png)
-* /bbc
+* GET /bbc
     * .hero_image_link'
     * a.media_link
     ![current bbc query](https://raw.githubusercontent.com/OpenNewsLabs/spiders/master/crawlers/bbc/bbc-current.png)

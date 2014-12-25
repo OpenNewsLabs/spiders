@@ -32,7 +32,7 @@ describe('API', function(){
   describe('GET /fox', function(){
     it('clean response', function(done){
       request(url)
-       .get('/fox')
+       .get('/foxa')
        .expect(arrayLengthTest)
        .expect(200, done);
     })
