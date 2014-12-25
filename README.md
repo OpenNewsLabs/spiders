@@ -20,7 +20,7 @@ Sites are scraped using css queries to grab proper anchor hrefs
     ![current cnn query](https://raw.githubusercontent.com/OpenNewsLabs/spiders/master/crawlers/cnn/cnn.png)
 * /fox
     * .latest-news > ul > li > a
-    ![current fox query](https://raw.githubusercontent.com/OpenNewsLabs/spiders/master/crawlers/fox/fox-current.png)
+    ![current fox query](https://raw.githubusercontent.com/OpenNewsLabs/spiders/master/crawlers/fox/fox-latest.png)
 * /bbc
     * .hero_image_link'
     * a.media_link
