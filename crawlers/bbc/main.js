@@ -15,14 +15,18 @@ exports.latest = function(req, res){
     parsedHTML('.hero_image_link').map(function(i, latest) {
 
       var href = $(latest).attr('href')
+      var title = $(latest).attr('title')
 
       // do not show the links twice, cnn adds video imgs with the same
       // href as the text beside it
       if(alreadyAdded !== href) {
 
         alreadyAdded = href
-        console.log(href)
-        output.push(href);
+        var story = {
+          href: href,
+          title: title
+        }
+        output.push(story);
 
       }
 
@@ -31,14 +35,17 @@ exports.latest = function(req, res){
     parsedHTML('a.media_link').map(function(i, latest) {
 
       var href = $(latest).attr('href')
-
+      var title = $(latest).attr('title')
       // do not show the links twice, cnn adds video imgs with the same
       // href as the text beside it
       if(alreadyAdded !== href) {
 
         alreadyAdded = href
-        console.log(href)
-        output.push(href);
+        var story = {
+          href: href,
+          title: title
+        }
+        output.push(story);
 
       }
 
