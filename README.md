@@ -14,17 +14,12 @@ Current API
 --------
 After local installation is running all apis below can be viewed by appending to base path. example: "http://localhost:3000/cnn"
 
-Sites are scraped using css queries to grab proper anchor hrefs
 
 * GET /cnn
-    * .cnn_mtt1content > div > ul > li > a 
     ![current cnn query](https://raw.githubusercontent.com/OpenNewsLabs/spiders/master/crawlers/cnn/cnn.png)
 * GET /fox
-    * .latest-news > ul > li > a
     ![current fox query](https://raw.githubusercontent.com/OpenNewsLabs/spiders/master/crawlers/fox/fox-latest.png)
 * GET /bbc
-    * .hero_image_link'
-    * a.media_link
     ![current bbc query](https://raw.githubusercontent.com/OpenNewsLabs/spiders/master/crawlers/bbc/bbc-current.png)
 
 Testing
