@@ -3,7 +3,7 @@ var $ = require('cheerio'),
   exports = module.exports = {}
 
 exports.latest = function(req, res){
-
+  var baseURL = "http://www.foxnews.com"
   function gotHTML(err, resp, html) {
 
     if (err) return console.error(err)
@@ -21,6 +21,12 @@ exports.latest = function(req, res){
       if(alreadyAdded !== href) {
 
         alreadyAdded = href
+
+        var pat = /^https?:\/\//i;
+        if ( !pat.test(href) ) {
+          href = baseURL + href
+        }
+
 
         var story = {
           href: href,

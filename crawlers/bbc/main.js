@@ -3,7 +3,7 @@ var $ = require('cheerio'),
   exports = module.exports = {}
 
 exports.latest = function(req, res){
-
+  var baseURL = "http://www.bbc.com"
   function gotHTML(err, resp, html) {
 
     if (err) return console.error(err)
@@ -20,8 +20,12 @@ exports.latest = function(req, res){
       // do not show the links twice, cnn adds video imgs with the same
       // href as the text beside it
       if(alreadyAdded !== href) {
-
         alreadyAdded = href
+
+        var pat = /^https?:\/\//i;
+        if ( !pat.test(href) ) {
+          href = baseURL + href
+        }
         var story = {
           href: href,
           title: title
@@ -39,8 +43,13 @@ exports.latest = function(req, res){
       // do not show the links twice, cnn adds video imgs with the same
       // href as the text beside it
       if(alreadyAdded !== href) {
-
         alreadyAdded = href
+
+        var pat = /^https?:\/\//i;
+        if ( !pat.test(href) ) {
+          href = baseURL + href
+        }
+
         var story = {
           href: href,
           title: title
