@@ -27,7 +27,6 @@ exports.latest = function(req, res){
           href = baseURL + href
         }
 
-
         var story = {
           href: href,
           title: title
