@@ -8,7 +8,13 @@
   </head>
   <body ng-controller="newsListCtrl">
     <ul>
-      <li ng-repeat="story in stories">
+      <li ng-repeat="story in bbc">
+        <a href="{{story.href}}">{{story.title}}</a>
+      </li>
+      <li ng-repeat="story in fox">
+        <a href="{{story.href}}">{{story.title}}</a>
+      </li>
+      <li ng-repeat="story in cnn">
         <a href="{{story.href}}">{{story.title}}</a>
       </li>
     </ul>
