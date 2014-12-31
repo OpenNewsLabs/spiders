@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en" ng-app="openNews">
+  <head>
+    <meta charset="utf-8">
+    <title>News Spiders</title>
+    <script src="js/angular.js"></script>
+    <script src="js/controllers.js"></script>
+  </head>
+  <body ng-controller="newsListCtrl">
+    <ul>
+      <li ng-repeat="story in stories">
+        <a href="{{story.href}}">{{story.title}}</a>
+      </li>
+    </ul>
+  </body>
+</html>
