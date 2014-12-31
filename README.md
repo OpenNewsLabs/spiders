@@ -1,7 +1,6 @@
 News Spiders
 ==========
-A collection of crawlers for news web sites. API is used to grab links of the latest stories and provide them in a clean json format to be rendered however you need. Most news orgs do not provide an api to get their latest stories, so I have created my own.
-
+A collection of crawlers for news web sites. API is used to grab links of the latest stories and provide them in a clean json format to be rendered however you need. Most news orgs do not provide an api to get their latest stories, so I have created my own...
 Local installation
 --------
 This api relies on node.js so make sure you have a revent version installed. 
