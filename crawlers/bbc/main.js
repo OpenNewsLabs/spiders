@@ -16,6 +16,7 @@ exports.latest = function(req, res){
 
       var href = $(latest).attr('href')
       var title = $(latest).attr('title')
+      var img = $(latest).children('img').attr('src')
 
       // do not show the links twice, cnn adds video imgs with the same
       // href as the text beside it
@@ -28,7 +29,8 @@ exports.latest = function(req, res){
         }
         var story = {
           href: href,
-          title: title
+          title: title,
+          img: img
         }
         output.push(story);
 
@@ -40,6 +42,7 @@ exports.latest = function(req, res){
 
       var href = $(latest).attr('href')
       var title = $(latest).attr('title')
+      var img = $(latest).children('span').children('img').attr('src')
       // do not show the links twice, cnn adds video imgs with the same
       // href as the text beside it
       if(alreadyAdded !== href) {
@@ -52,7 +55,8 @@ exports.latest = function(req, res){
 
         var story = {
           href: href,
-          title: title
+          title: title,
+          img: img
         }
         output.push(story);
 

@@ -5,6 +5,9 @@
 var openNews = angular.module('openNews', []);
 
 openNews.controller('newsListCtrl', ['$scope', '$http', function($scope, $http) {
+  $scope.hasImg = function(message) {
+        return message.hasOwnProperty('img')
+  }
   $http.get('/bbc').success(function(data) {
     $scope.bbc = data;
   });
