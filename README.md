@@ -11,7 +11,7 @@ This api relies on node.js so make sure you have a revent version installed.
 3. node app.js
 4. open up the index viewer of all the latest news at the local uri http://localhost:3000/
 
-![preview of home page](https://raw.githubusercontent.com/OpenNewsLabs/spiders/master/crawlers/cnn/cnn.png)
+![preview of index viewer](https://raw.githubusercontent.com/OpenNewsLabs/spiders/master/public/images/preview.jpg)
 
 Current API
 --------
@@ -19,7 +19,7 @@ After local installation is running all apis below can be viewed by appending to
 
 
 * GET /cnn
-    ![current cnn query](https://raw.githubusercontent.com/OpenNewsLabs/spiders/master/public/images/preview.jpg)
+    ![current cnn query](https://raw.githubusercontent.com/OpenNewsLabs/spiders/master/crawlers/cnn/cnn.png)
 * GET /fox
     ![current fox query](https://raw.githubusercontent.com/OpenNewsLabs/spiders/master/crawlers/fox/fox-latest.png)
 * GET /bbc
