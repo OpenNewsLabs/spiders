@@ -5,6 +5,9 @@ A collection of crawlers for news web sites. API is used to grab links of the la
 
 Local installation
 --------
+
+![preview of index viewer](https://raw.githubusercontent.com/OpenNewsLabs/spiders/master/public/images/preview.jpg)
+
 This api relies on node.js so make sure you have a revent version installed. 
 
 1. git clone https://github.com/OpenNewsLabs/spiders.git
@@ -12,7 +15,7 @@ This api relies on node.js so make sure you have a revent version installed.
 3. node app.js
 4. open up the index viewer of all the latest news at the local uri http://localhost:3000/
 
-![preview of index viewer](https://raw.githubusercontent.com/OpenNewsLabs/spiders/master/public/images/preview.jpg)
+
 
 Current API
 --------
