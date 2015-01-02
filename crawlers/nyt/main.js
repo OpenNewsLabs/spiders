@@ -12,6 +12,10 @@ exports.topNews = function(req, res){
 
     parsedHTML('#top-news .story .story-heading > a').map(function(i, latest) {
 
+      if ($(latest).attr('class') == 'nythpBriefingNewsletterSignup'){
+        return
+      }
+
       var href = $(latest).attr('href')
       var title = $(latest).text()
 
