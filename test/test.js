@@ -38,4 +38,13 @@ describe('API', function(){
     })
   })
 
+  describe('GET /nyt', function(){
+    it('clean response', function(done){
+      request(url)
+       .get('/nyt')
+       .expect(arrayLengthTest)
+       .expect(200, done);
+    })
+  })
+
 })

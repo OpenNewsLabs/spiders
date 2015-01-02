@@ -18,6 +18,11 @@ app.get('/fox', function (req, res) {
   crawl.fox.latest(req, res);
 })
 
+app.get('/nyt', function (req, res) {
+  console.log("request /nyt")
+  crawl.nyt.topNews(req, res);
+})
+
 var server = app.listen(3000, function () {
 
   var host = server.address().address
