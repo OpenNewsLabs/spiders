@@ -6,7 +6,7 @@ A collection of crawlers for news web sites. API is used to grab links of the la
 Local installation
 --------
 
-![preview of index viewer](https://raw.githubusercontent.com/OpenNewsLabs/spiders/master/public/images/preview.jpg)
+[preview of index viewer](https://raw.githubusercontent.com/OpenNewsLabs/spiders/master/public/images/preview.jpg)
 
 This api relies on node.js so make sure you have a revent version installed. 
 
@@ -23,11 +23,9 @@ After local installation is running all apis below can be viewed by appending to
 
 
 * GET /cnn
-    ![current cnn query](https://raw.githubusercontent.com/OpenNewsLabs/spiders/master/crawlers/cnn/cnn.png)
 * GET /fox
-    ![current fox query](https://raw.githubusercontent.com/OpenNewsLabs/spiders/master/crawlers/fox/fox-latest.png)
 * GET /bbc
-    ![current bbc query](https://raw.githubusercontent.com/OpenNewsLabs/spiders/master/crawlers/bbc/bbc-current.png)
+* GET /nyt
 
 Testing
 --------
