@@ -13,7 +13,7 @@ This api relies on node.js so make sure you have a revent version installed.
 1. git clone https://github.com/OpenNewsLabs/spiders.git
 2. cd spiders && npm install
 3. node app.js
-4. open up the index viewer of all the latest news at the local uri http://localhost:3000/
+4. open up the index viewer of all the latest news at the local uri http://localhost/cnn
 
 
 
